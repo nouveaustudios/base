@@ -1,0 +1,53 @@
+// structure
+
+
+// basic structure
+.master-container {
+  width: 100%;
+  float: left;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+
+// inner-w and helpers
+.container {
+
+  > .inner-w {
+    width: 96%; // basically padding on small screens...
+    margin: 0 auto;
+    padding: $padding/2;
+  }
+
+  > .trim-width {
+    max-width: $trim-width;
+  }
+
+  > .full-width {  // debating this
+    width: 100%;
+    margin: 0 auto;
+  }
+
+} // .container
+
+
+// blocks
+
+.target-by-section .block { 
+  // just for example. further covered in a different pen.
+  width: 100%;
+  float: left;
+  margin-bottom: 1em;
+}
+  
+
+// target by section
+
+.section07 {
+  background: url("images/pink.jpg");
+}
+

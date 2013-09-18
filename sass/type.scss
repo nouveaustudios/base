@@ -1,0 +1,50 @@
+// type
+
+body {
+	font-family: $body-font;
+	color: rgba(255,255,255,.2);
+}
+
+.main-content {
+
+	font-family: $body-font;
+	color: rgba(255,255,255,.2);
+
+	p {
+		font-size: .9em;
+	}
+
+	h1 {
+		font-family: $heading-font;
+	}
+
+	h2 {
+		
+	}
+
+	h3 {
+		
+	}
+
+	h4 {
+		
+	}
+
+	h5 {
+		
+	}
+
+	h6 {
+		
+	}
+
+	ul { // reset for inline list in articles
+		list-style: decimal;
+		padding: 1.5em;
+	}
+
+	p a { // keep defaults in paragraph tags
+		text-decoration: underline;
+	}
+
+} // .main-content

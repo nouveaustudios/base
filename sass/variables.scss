@@ -1,0 +1,53 @@
+// variables
+
+
+// $global
+
+
+// $break points
+@mixin bp($point) {
+  	@if $point == m {
+		@media (min-width: 30em) { @content; }
+	}
+	@else if $point == l {
+		@media (min-width: 50em) { @content; }
+	}
+	@else if $point == xl {
+		@media (min-width: 70em)  { @content; }
+	}
+}
+
+
+
+
+$trim-width: 70em;
+
+$padding: 16px;
+$padding: 1rem;
+
+
+// $fonts
+$body-font: arial;
+$heading-font: georgia;
+
+
+// $black and white
+
+$black: #111;
+$white: #efefef;
+
+
+// $color
+
+$gray: 					#999;
+$gray-light: 		lighten($gray, 20%);
+$gray-dark: 		darken($gray, 20%);
+
+$color: 				#f06;
+$color-light: 	lighten($color, 20%);
+$color-dark: 		darken($color, 20%);
+
+
+
+
+

@@ -1,0 +1,95 @@
+// user reset
+
+// $natural-box-model
+
+*, *:before, *:after { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+
+// $global-cursor
+
+html,
+body {
+	cursor: default;
+}
+code {
+	cursor: text;
+}
+a,
+label,
+button, 
+input[type="radio"], 
+input[type="submit"],
+input[type=file], 
+input[type="checkbox"] {
+	cursor: pointer;
+}
+button[disabled], 
+input[disabled] {
+	cursor: default;
+}
+
+
+// $global
+
+html { // keep scroll bar to avoid shifting width
+	overflow-y: scroll;
+}
+
+
+// $images
+
+.image-w > img { // images in .image-w respond
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+// $lists
+
+ul { // remove global list styling
+	list-style: none;
+	padding: 0; // remove default indent
+	margin: 0;  // remove default margins from top and bottom
+}
+
+
+// $links
+
+a { // reset global anchors
+	text-decoration: none;
+	color: inherit;
+}
+
+
+// $clearfix
+
+.clearfix { // clear floats
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// @extend .clearfix;
+
+// extend the class 
+.master-container, 
+.container, 
+.inner-w, ul {
+	@extend .clearfix;
+}
+
+
+
+

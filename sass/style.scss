@@ -1,0 +1,53 @@
+// styles
+
+
+html {
+	background-image: url('images/pink.jpg');
+}
+
+.master-container {
+	background-color: $black;
+}
+
+.global-header {
+	background-color: red;
+}
+
+.global-header h1 {
+	color: $black;
+	border: 1px solid red;
+}
+
+
+
+
+.target-by-section .block { 
+  // just for example. further covered in a different pen.
+  width: 100%;
+  float: left;
+  border: 1px solid lightblue;
+  padding: 1em;
+  @include bp(m) {
+  	width: 49%;
+  	margin-right: 2%;
+  	&:nth-of-type(3n+2) {
+  		margin-right: 0;
+  	}
+  	&:nth-of-type(3n+3) {
+  		width: 100%;
+  		margin-right: 0;
+  	}
+  }
+  @include bp(l) {
+  	width: 32%;
+  	margin-right: 2%;
+  	&:nth-of-type(3n+2) {
+  		margin-right: 2%;
+  	}
+  	&:nth-of-type(3n+3) {
+  		width: 32%;
+  	}
+  }
+}
+
+
